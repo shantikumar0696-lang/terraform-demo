@@ -1,2 +1,0 @@
-# terraform-demo
-thisispass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

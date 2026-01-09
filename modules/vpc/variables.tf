@@ -1,16 +1,19 @@
 variable "vpc_name" {
-  description = "The name of the VPC network."
-  type = string
+  type        = string
+  description = "Name of the VPC network"
 }
+
 variable "region" {
-  description = "subnet region"
-  type = string
+  type        = string
+  description = "Region where VPC and subnet are created"
 }
-variable "auto_create_subnetworks" {
-  description = " this for auto_create_subnetworks"
-  type = bool
+
+variable "subnet_cidr" {
+  type        = string
+  description = "CIDR range for the private subnet"
 }
-variable "ip_cidr_range" {
-  description = " this for ip_cidr_range"
-  type = string
+
+variable "project" {
+  type        = string
+  description = "project name"
 }
