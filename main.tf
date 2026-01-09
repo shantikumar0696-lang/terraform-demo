@@ -7,7 +7,6 @@ module "vpc" {
   subnet_cidr = var.subnet_cidr
 }
 
-
 # Cloud NAT Module
 module "nat" {
   source      = "./modules/nat"
